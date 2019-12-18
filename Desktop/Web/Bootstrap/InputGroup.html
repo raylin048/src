@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      /* style 코드 작성 */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- html 코드작성 -->
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">@</span>
+        </div>
+        <input type="text" placeholder="Username" class="form-control" />
+      </div>
+      <br>
+      <div class="input-group mb-3">
+        <input type="text" placeholder="Username" class="form-control" />
+        <div class="input-group-append">
+          <span class="input-group-text">@something.com</span>
+        </div>
+      </div>
+      <!-- 앞 뒤로 그룹 -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">$</span>
+        </div>
+        <input type="text" class="form-control" />
+        <div class="input-group-prepend">
+          <span class="input-group-text">.00</span>
+        </div>
+      </div>
+      <!-- input 이 여러개 일 때 -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Name & Email</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Full name" />
+        <input type="email" class="form-control" placeholder="Email" />
+      </div>
+      <!-- 버튼 추가 -->
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Find by name..." />
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-primary" type="button">Search</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- jQuery , bundle.js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      // 자바스크립트 코드 작성
+    </script>
+  </body>
+</html>

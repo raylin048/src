@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 CDN</title>
+    <!--jquery CDN-->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <!-- <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                alert('버튼이 클릭됨!');              
+            });
+        });
+    </script> -->
+    <style>
+        body{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F4F4F4;
+            line-height: 1.5em;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid black;
+            margin-bottom: 10px;
+        }
+
+        #container {
+            widows: 90%;
+            margin: auto;
+            pad: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>jQuery 시작하기-이벤트</h1>
+    </header>
+    <div id="container">
+        <h3>마우스 이벤트</h3>
+        <button id="btn1" class="btn1">숨기기</button>
+        <button id="btn2">보이기</button>
+        <button id="btn3">토글</button>
+        <p class="para1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis illum totam optio sapiente perferendis ut tempora quia tempore cum a id aliquid praesentium porro, nihil vero molestias, blanditiis neque voluptatibus!
+        </p>
+        <h1 id="coords"></h1>
+        <hr>
+        <form action="" id="form">
+            <label for="">이름</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="">메일</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="">성별</label>
+            <select name="gender" id="gender">
+                <option value="male">남자</option>
+                <option value="female">여자</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <script>
+        // head 태그 사이에 쓰이게 되면 제대로 동작이 되지 않음
+        // 문서 로드 전에 script가 먼저 실행되어 id를 찾지 못하기 때문
+        $(document).ready(function(){
+            // $('#btn1').click(function(){
+            //     //alert('버튼이 클릭됨!');
+            //     $('.para1').hide();
+            // });
+            // $('#btn2').click(function(){
+            //     //alert('버튼이 클릭됨!');
+            //     $('.para1').show();
+            // });
+            // // $('#btn3').hover(function(){
+            // //     $('.para1').toggle();
+            // // });
+            // $('#btn3').on('mousedown', function(){  //마우스 행동에 따라
+            //     $('.para1').toggle();
+            // });
+            // $('#btn3').on('mouseup', function(){
+            //     $('.para1').toggle();
+            // });
+            // $('#btn1').click(function(){
+            //     console.log('클릭됨!');
+            //     console.log(e.currentTarget.className);
+            // })
+            // $(document).on('mousemove', function(e){
+            //     // console.log('좌표 X:'+e.clientX+'Y:'+e.clientY);
+            //     $('#coords').html('좌표 X:'+e.clientX+'Y:'+e.clientY);
+            // })
+            $('input').focus(function() {  //선택 됐을 시
+                $(this).css('background', 'pink');
+            });
+            $('input').blur(function() {   //선택을 나갔을때(다른거 선택 등)
+                $(this).css('background', 'white');
+            });
+            $('input').keyup(function(e) {  //키 입력시
+                // console.log('keyup-event');
+                console.log(e.target.value);
+            });
+            $('select#gender').change(function(e) {  //바뀔때
+                alert(e.target.value);
+            });
+            $('#form').submit(function(e) {  
+                e.preventDefault();  //보내기event 중지
+                let name = $('input#name').val();
+                console.log(name);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      /* style 코드 작성 */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- html 코드작성 -->
+      <h3><code>속성 data-toggle="collapse"</code></h3>
+      <div>
+        <a href="#collapseExample" class="btn btn-primary" data-toggle="collapse">링크 href</a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample">버튼 data-target</button>
+      </div>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+      <br><hr><br>
+      <!-- 멀티 콜랩스 -->
+      <div>
+        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapse111">토글 1</button>
+        <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapse222">토글 2</button>
+        <button class="btn btn-warning" type="button" data-toggle="collapse" data-target=".multi">토글 모두</button>
+        <button class="btn btn-info" id="btn1">JS버튼</button>
+      </div>
+      <div class="collapse show multi" id="collapse111">
+        <div class="card card-body">
+          111 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+      <div class="collapse show multi" id="collapse222">
+        <div class="card card-body">
+          222 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery , bundle.js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      // 자바스크립트 코드 작성
+      $(document).ready(function () {
+        console.log("ready!");
+        $("#btn1").on("click", function () {
+          console.log("clicked");
+          var collapses = $(".container .collapse");
+          console.log(collapses);
+          collapses.each(function() {
+            $(this).collapse("toggle");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

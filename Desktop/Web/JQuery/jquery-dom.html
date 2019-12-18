@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 CDN</title>
+    <!--jquery CDN-->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <style>
+        body{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F4F4F4;
+            line-height: 1.5em;
+        }
+    
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid black;
+            margin-bottom: 10px;
+        }
+    
+        #container {
+            widows: 90%;
+            margin: auto;
+            pad: 10px;
+        }
+
+        .myclass{
+            color: skyblue;
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>jQuery 시작하기-DOM응용</h1>
+    </header>
+
+    <div id="container">
+        <button id="btn1">버튼 1</button>
+        <p class="para1">첫번째 문장입니다.</p>
+        <p class="para2">두번째 문장입니다.</p>
+        <div class="myDiv">안녕하세요</div>
+
+        <input type="text" id="newItem">
+
+        <ul id="list">
+            <li>리스트 아이템 1</li>
+            <li>리스트 아이템 2</li>
+            <li>리스트 아이템 3</li>
+            <li>리스트 아이템 4</li>
+        </ul>
+
+        <a href="https://www.google.co.kr/">구글링크</a>
+
+        <ul id="users"></ul>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            //멀티 속성 설정
+            $('p.para1').css({color: 'red', background: 'yellowgreen'});
+            //클래스 추가, 제거
+            $('p.para2').addClass('myclass');
+            $('p.para2').removeClass('myclass');
+
+            $('#btn1').on('click', function(){
+                $('p.para2').toggleClass('myclass');
+            });
+            //태그 내 텍스트 및 html 수정
+            // $('.myDiv').text('Hellow World!');  //태그 내 text 입력
+            // $('.myDiv').html('<h3>Hellow World!</h3>');
+            // alert($('.myDiv').text());
+
+            //내용을 추가하는 방법
+            // $('ul').append('<li>리스트 아이템 추가</li>');  //뒷쪽 추가
+            $('ul').prepend('<li>리스트 아이템 추가</li>');  //앞쪽 추가
+
+            //위치변화
+            // $('.para1').appendTo('.para2');  //para1을 para2 뒤로
+            $('.para1').prependTo('.para2');  //para1을 para2 앞으로
+
+            //이전과 이후 (추가 html)
+            // $('ul').before('<h4>Hello</h4>');
+            // $('ul').after('<h4>Hello</h4>');
+
+            //내용제거: empty(), 태그까지 제거: detach()
+            // $('ul').empty();
+            // $('ul').detach();
+
+            //태그의 속성 추가 및 제거
+            $('a').attr('target', '_blank');
+            $('a').removeAttr('target');
+
+            //태그로 감싸기
+            // $('p').wrap('<h1>');
+
+            $('#newItem').on('keyup', function(e){
+                // console.log(e.type+" : "+e.which);
+                let code = e.which
+                if(code == 13){
+                    e.preventDefault();
+                    $('ul').append('<li>'+e.target.value+'</li>')
+                }
+            });
+
+            var myArr = [ '사과', '당근', '배', '수박'];
+            $.each(myArr, function(i,val){
+                // console.log(i+' : '+val);
+                $('#users').append('<li>'+val+'</li>');
+            })
+
+            var newArr = $('ul#list li').toArray();
+            // console.log(newArr);
+            $.each(newArr, function(i,val){
+                console.log(val.innerHTML);
+            })
+        });
+    </script>
+</body>
+</html>

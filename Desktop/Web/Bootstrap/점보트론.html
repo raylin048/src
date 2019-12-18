@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      /* CSS 코드 작성 */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- html 코드작성 -->
+      <h1>Bootstrap</h1>
+      <h3><code>.jumbotron</code></h3>
+      <div class="jumbotron text-center">
+        <h1 class="display-4">점보트론</h1>
+        <p class="laed">
+          점보트론(jumbotron)은 소나에서 1985년 공개한 대형 스크린 TV의
+          상표명으로 각종 스포츠 경기장 및 콘서트장에서 사용되었다.
+        </p>
+        <hr class="mr-3" />
+        <p class="lead"></p>
+        <a href="" class="btn btn-primary btn-lg">자세히 알아보기</a>
+      </div>
+      <div class="container">
+        <h2 class="mt-4">버튼 스타일</h2>
+        <div>
+          <a class="btn btn-outline-primary" href="http://www.google.com"
+            >링크</a
+          >
+          <button type="button" class="btn btn-primary">basic</button>
+          <button type="button" class="btn btn-warning">warning</button>
+          <button type="submit" class="btn btn-outline-success">버튼</button>
+          <input type="button" class="btn btn-primary" value="Input" />
+          <input type="submit" class="btn btn-dark" value="Submit" />
+          <input type="reset" class="btn btn-danger" value="Reset" />
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-5">
+        <a href="" class="btn btn-primary">링크</a>
+        <button type="submit" class="btn btn-success">submit</button>
+        <input type="button" class="btn btn-primary" value="input" />
+        <input type="submit" class="btn btn-danger" value="submit" />
+        <input type="reset" value="reset" class="btn btn-outline-dark" />
+      </div>
+      <div class="container">
+        <h2 class="mt-5">버튼 그룹</h2>
+        <div class="btn-group">
+          <button class="btn btn-primary">basic(white)</button>
+          <button class="btn btn-warning">warning</button>
+          <button class="btn btn-success">버튼</button>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="mt-5">버튼 그룹</h2>
+        <div class="btn-group-vertical">
+          <button class="btn btn-outline-primary">basic</button>
+          <button class="btn btn-outline-warning">warning</button>
+          <button class="btn btn-outline-success">버튼</button>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="mt-4">Badges</h2>
+        <div>
+          <span class="badge badge-success" type="button">success</span>
+          <a href="https://www.google.com" class="badge badge-success">구글</a>
+          <span class="badge badge-dark" type="button">dark</span>
+          <span class="badge badge-outline-danger" type="reset">danger</span>
+        </div>
+      </div>
+      <h1 class="container mt-5">프로그레스 바</h1>
+      <div class="progress">
+        <div class="progress-bar" style="width: 10%;">기본색</div>
+      </div>
+      <br />
+      <div class="progress">
+        <div class="progress-bar bg-warning" style="width: 20%;"></div>
+      </div>
+      <br />
+      <div class="progress">
+        <div
+          class="progress-bar bg-info progress-bar"
+          style="width: 100%; height: 50%;"
+        ></div>
+      </div>
+      <div class="progress border mt-3">
+        <div
+          class="progress-bar bg-white progress-bar"
+          style="width: 50%; "
+        ></div>
+      </div>
+      <div>
+        <div class="progress mt-3">
+          <div
+            class="progress-bar bg-warning progress-bar-striped"
+            style="width: 20%;"
+          ></div>
+        </div>
+        <div class="progress mt-3">
+        <div
+          class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+          style="width: 40%;"
+        ></div>
+      </div>
+      <div class="progress mt-3">
+        <div
+          class="progress-bar bg-success progress-bar-striped"
+          style="width: 40%;"
+        >
+          FreeSpace
+        </div>
+        <div
+          class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+          style="width: 20%;"
+        >
+          우하하하
+        </div>
+        <div
+          class="progress-bar bg-danger progress-bar-striped"
+          style="width: 20%;"
+        >
+          이것이 멀티다
+        </div>
+        <!-- 툴팁 -->
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <div>
+        <h2 class="mt-3">툴팁</h2>
+        <button
+          class="btn btn-primary"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="툴팁1"
+        >
+          툴팁 위쪽
+        </button>
+        <button
+          class="btn btn-success"
+          data-toggle="tooltip"
+          data-placement="right"
+          title="툴팁2"
+        >
+          툴팁 오른쪽
+        </button>
+        <button
+          class="btn btn-warning"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="툴팁3"
+        >
+          툴팁 아래쪽
+        </button>
+        <button
+          class="btn btn-info"
+          data-toggle="tooltip"
+          data-placement="left"
+          title="툴팁4"
+        >
+          툴팁 왼쪽
+        </button>
+      </div>
+      <br />
+      <br />
+      <br />
+    </div>
+    <div>
+        <h2 class="mt-3">팝오버</h2>
+        <button
+          class="btn btn-primary"
+          data-toggle="popover"
+          data-placement="top"
+          title="팝오버1"
+        >
+          팝오버 위쪽
+        </button>
+        <button
+          class="btn btn-success"
+          data-toggle="popover"
+          data-placement="right"
+          title="팝오버2"
+        >
+          팝오버 오른쪽
+        </button>
+        <button
+          class="btn btn-warning"
+          data-toggle="popover"
+          data-placement="bottom"
+          title="팝오버3"
+        >
+          팝오버 아래쪽
+        </button>
+        <button
+          class="btn btn-info"
+          data-toggle="popover"
+          data-placement="left"
+          title="팝오버4"
+        >
+          팝오버 왼쪽
+        </button>
+      </div>
+      <br />
+      <br />
+      <br />
+    </div>
+    <div>
+    <!-- 버튼드롭 -->
+    <h2>버튼 드롭</h2>
+    <div class="dropdown dropright">
+      <button type="menu" class="btn btn-info dropdown-toggle ml-5" data-toggle="dropdown">
+        드롭다운 버튼
+      </button>
+      <div class="dropdown-menu">
+        <div class="dropdown-header">여행지</div>
+        <a href="" class="dropdown-item">인도</a>
+        <a href="" class="dropdown-item">유럽</a>
+        <a href="" class="dropdown-item">상해</a>
+        <div class="dropdown-header">느와르</div>
+        <a href="" class="dropdown-item">로드투 퍼디션</a>
+        <a href="" class="dropdown-item">디파티드</a>
+        <a href="" class="dropdown-item">신세계</a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <!-- jQuery , bundle.js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      // 자바스크립트 코드 작성
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
+    </script>
+  </body>
+</html>

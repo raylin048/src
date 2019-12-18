@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      /* CSS 코드 작성 */
+      .list-group > a.list-group-item {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <!-- html 코드작성 -->
+      <ul class="list-group mb-5">
+        <li class="list-group-item">My List Item One</li>
+        <li class="list-group-item active">My List Item Two</li>
+        <li class="list-group-item">My List Item Three</li>
+        <li class="list-group-item">My List Item Four</li>
+        <li class="list-group-item">My List Item Five</li>
+      </ul>
+      <!-- a태그로 색깔 추가-->
+      <ul class="list-group mb-5">
+        <a href="" class="list-group-item list-group-item-info"
+          >My List Item One</a
+        >
+        <a href="" class="list-group-item list-group-item-primary"
+          >My List Item Two</a
+        >
+        <a href="" class="list-group-item list-group-item active"
+          >My List Item Three</a
+        >
+        <a href="" class="list-group-item list-group-item-warning"
+          >My List Item Four</a
+        >
+        <a href="" class="list-group-item list-group-item-dark"
+          >My List Item Five</a
+        >
+        <a href="" class="list-group-item list-group-item-light"
+          >My List Item Six</a
+        >
+        <!-- 리스트 플러쉬 -->
+      </ul>
+      <ul class="list-group mb-5 list-group list-group-flush">
+        <li class="list-group-item">
+          My List Item One
+          <span class="badge badge-primary">30</span>
+        </li>
+        <li class="list-group-item active">
+          My List Item Two
+          <span class="badge badge-warning">40</span>
+        </li>
+        <li class="list-group-item">My List Item Three</li>
+        <li class="list-group-item">My List Item Four</li>
+        <li class="list-group-item">My List Item Five</li>
+      </ul>
+      <ul class="list-group mb-5" id="badgeList">
+        <li class="list-group-item list-group-item d-flex align-items-center">
+          My List Item One
+          <span class="badge badge-primary ml-auto">30</span>
+        </li>
+        <li class="list-group-item active d-flex align-items-center">
+          My List Item Two
+          <span class="badge badge-warning ml-auto">40</span>
+        </li>
+        <li class="list-group-item">
+          My List Item Three
+        </li>
+        <li class="list-group-item">My List Item Four</li>
+        <li class="list-group-item">My List Item Five</li>
+      </ul>
+    </div>
+    <!-- jQuery , bundle.js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      // 자바스크립트 코드 작성
+      $("#badgeList li.list-group-item").each(function() {
+        $(this).on("mouseenter", function() {
+          $(this).addClass("active");
+        });
+
+        $(this).on("mouseleave", function() {
+          $(this).removeClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

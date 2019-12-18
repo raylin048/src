@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>제이쿼리 CDN</title>
+    <!--jquery CDN-->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <style>
+        body{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F4F4F4;
+            line-height: 1.5em;
+        }
+    
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid black;
+            margin-bottom: 10px;
+        }
+    
+        #container {
+            widows: 90%;
+            margin: auto;
+            pad: 10px;
+        }
+
+        #box {
+            background: #333;
+            color: white;
+            width: 300px;
+            height: 90px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        #box2 {
+            background: rebeccapurple;
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>jQuery 애니메이션&효과</h1>
+    </header>
+
+    <div id="container">
+        <button id="btnFadeOut">페이드 아웃</button>
+        <button id="btnFadeIn">페이드 인</button>
+        <button id="btnFadeTog">페이드 토글</button>
+        <hr>
+        <button id="btnSlideUp">슬라이드 업</button>
+        <button id="btnSlideDown">슬라이드 다운</button>
+        <button id="btnSlideTog">슬라이드 토글</button>
+        <button id="btnStop">Stop</button>
+        <hr>
+        <div id="box"><h1>페이지 효과 연습</h1></div>
+        <hr>
+        <button id="moveRight">오른쪽 이동</button>
+        <button id="moveLeft">왼쪽 이동</button>
+        <button id="moveAround">어라운드 이동</button>
+        <hr>
+        <div id="box2"></div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#btnFadeOut').on('click', function(){  
+                $('#box').fadeOut(5000);  //시간부여 가능
+                // 'fast', 'slow', ms
+            });
+            $('#btnFadeIn').on('click', function(){  
+                $('#box').fadeIn(3000);  //시간부여 가능
+                // 'fast', 'slow', ms
+            });
+            $('#btnFadeTog').on('click', function(){  
+                $('#box').fadeToggle(1000);  //시간부여 가능
+                // 'fast', 'slow', ms
+            });
+
+            // 슬라이드 효과
+            $('#btnSlideUp').on('click', function(){
+                $('#box').slideUp(3000);
+            });
+            $('#btnSlideDown').on('click', function(){
+                $('#box').slideDown(3000);
+            });
+            $('#btnSlideTog').on('click', function(){
+                $('#box').slideToggle(3000);
+            });
+            $('#btnStop').on('click', function(){
+                $('#box').stop();
+            });
+
+            $('#moveRight').on('click', function(){
+                $('#box2').animate({
+                    left: 500,
+                    height: '300px',
+                    width: '300px',
+                    opacity: '0.5'
+                });
+            });
+            $('#moveLeft').on('click', function(){
+                $('#box2').animate({
+                    left: 0,
+                    height: '100px',
+                    width: '100px',
+                    opacity: '1'
+                });
+            });
+            $('#moveAround').on('click', function(){
+                let box = $('#box2');
+                box.animate({
+                    left:300
+                });
+                box.animate({
+                    top:200
+                });
+                box.animate({
+                    left:150,
+                    top:300
+                });
+                box.animate({
+                    top:200,
+                    left:0
+                });
+                box.animate({
+                    top:0
+                });
+
+            });
+        });
+    </script>
+
+</body>
+</html>

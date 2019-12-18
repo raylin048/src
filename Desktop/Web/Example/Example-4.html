@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Emilys+Candy|Single+Day&display=swap" rel="stylesheet">
+    <style>
+      /* style 코드 작성 */
+      body {
+        font-family: 'Single Day', cursive;
+        font-family: 'Emilys Candy', cursive;
+        font-weight: 400;
+      }
+
+      h1,h2,h3,h4,h5 {
+        font-family: "Single Day", cursive;
+        font-family: 'Emilys Candy', cursive;
+        font-weight: 400;
+      }
+
+      .h80 {
+        min-height: 80vh;
+      }
+
+      .h100 {
+        min-height: 100vh;
+      }
+
+      .title-underline{
+        width: 200px;
+        height: 7px;
+        margin: auto;
+      }
+
+      .about-picture {
+        background: url(img/IUaFile.jpg);
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- about 섹션 시작 -->
+      <section id="about" class="bg-info">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- 이미지 col -->
+            <div class="col-md-6 about-picture h80 pixed-position"></div>
+            <!-- 텍스트 col -->
+            <div class="col-md-6 about-text h80 px-5 d-flex align-items-center">
+              <!-- about text center -->
+              <div class="wrap-text">
+                <!-- 타이틀 -->
+                <div class="row">
+                  <div class="col text-center justify-content-around">
+                    <h1 class="display-4 text-uppercase text-dark mb-0">
+                      <strong>about</strong>
+                    </h1>
+                    <div class="title-underline bg-warning"></div>
+                    <p class="mt-2 text-capitalize text-muted">Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                </div>
+                <!-- 타이틀 끝 -->
+                <div class="row justify-content-around">
+                  <!-- item 시작 -->
+                  <div class="checkbox-item d-flex mb-2">
+                      <i class="fas fa-check fa-3x p-2 bg-warning mr-3 align-items-center"></i>
+                      <p class="text-light lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      </p>
+                    </div>
+                    <div class="checkbox-item d-flex mb-2">
+                      <i class="fas fa-check fa-3x p-2 bg-danger mr-3 align-items-center"></i>
+                      <p class="text-light lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      </p>
+                    </div>
+                    <div class="checkbox-item d-flex mb-2">
+                      <i class="fas fa-check fa-3x p-2 bg-primary mr-3 align-items-center"></i>
+                      <p class="text-light lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      </p>
+                    </div>
+                    <div class="checkbox-item d-flex mb-2">
+                      <i class="fas fa-check fa-3x p-2 bg-light mr-3 align-items-center"></i>
+                      <p class="text-light lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      </p>
+                    </div>
+                    <!-- item 끝 -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br><br>
+      <!-- Project 섹션 시작 -->
+      <section id="projects" class="py-5 bg-secondary">
+        <div class="container">
+          <!-- 타이틀 -->
+          <div class="row">
+            <div class="col text-center justify-content-around">
+              <h1 class="display-4 text-uppercase text-dark mb-0">
+                <strong>uaena</strong>
+              </h1>
+              <div class="title-underline bg-danger"></div>
+            </div>
+          </div>
+          <!-- 타이틀 끝 -->
+          <!-- Project 이미지 시작 -->
+          <div class="row py-3">
+            <div class="col-12 col-sm-6 col-md-4">
+              <img src="img/IU_Darling.jpg" class="img-fluid rounded" alt="project">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <img src="img/이지은_instyle.jpg" class="img-fluid img-thumbnail bg-success border border-success" alt="project">
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+              <img src="img/IUaFile.jpg" class="img-fluid rounded-circle  border border-success" alt="project">
+            </div>
+          </div>
+          <div class="row py-3 no-gutters">
+            <div class="col-12 col-sm-6 col-md-4">
+              <img src="img/IU_b.jpg" class="img-fluid rounded border border-secondary" alt="project">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <img src="img/IU_lovepoem.jpg" class="img-fluid rounded border border-secondary" alt="project">
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+              <img src="img/IU1.jpg" class="img-fluid rounded border border-secondary" alt="project">
+            </div>
+          </div>
+          <!-- Project 이미지 끝 -->
+        </div>
+      </section>
+      <!-- Project 섹션 끝 -->
+    </div>
+    
+    <!-- jQuery , bundle.js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      // 자바스크립트 코드 작성
+    </script>
+  </body>
+</html>

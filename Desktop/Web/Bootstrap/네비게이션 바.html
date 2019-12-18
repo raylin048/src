@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      /* CSS 코드 작성 */
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+      <!-- 제목/로고 -->
+      <a href="" class="navbar-brand">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#nbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nbar" class="collapse navbar-collapse">
+        <!-- 리스트 -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#myModal" data-toggle="modal" class="nav-link active">링크1</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">링크2</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link disabled">링크3</a>
+          </li>
+          <!-- 드롭다운 버튼 -->
+          <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              >드롭다운</a
+            >
+            <div class="dropdown-menu">
+              <a href="" class="dropdown-item">링크1</a>
+              <a href="" class="dropdown-item">링크2</a>
+              <a href="" class="dropdown-item">링크3</a>
+            </div>
+          </li>
+        </ul>
+        <!-- 서치폼 -->
+        <form action="" class="form-inline ml-auto">
+          <input type="text" class="form-control" placeholder="Search" />
+          <button type="submit" class="btn btn-success">검색</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- 헤더 -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal 그리드</h4>
+              <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            </div>
+            <!-- 바디 내용 -->
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label>한글이름</label>
+                    <input type="text" name="koreaname" id="koreaname" class="form-control">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label>영문이름</label>
+                    <input type="text" name="englishname" id="englishname" class="form-control">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" name="email" id="email" class="form-control">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Comments</label><br>
+                    <textarea name="comment" id="comment" cols="63" rows="2"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Footer -->
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button class="btn btn-primary" data-dismiss="modal">Send Email</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery , bundle.js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      // 자바스크립트 코드 작성
+    </script>
+  </body>
+</html>

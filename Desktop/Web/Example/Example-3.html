@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Emilys+Candy|Single+Day&display=swap" rel="stylesheet">
+    <style>
+      /* style 코드 작성 */
+      body {
+        font-family: 'Single Day', cursive;
+        font-family: 'Emilys Candy', cursive;
+        font-weight: 400;
+      }
+
+      h1,h2,h3,h4,h5 {
+        font-family: "Single Day", cursive;
+        font-family: 'Emilys Candy', cursive;
+        font-weight: 400;
+      }
+
+      section {
+        min-height: 80vh;
+      }
+
+      .title-underline{
+        width: 200px;
+        height: 7px;
+        margin: auto;
+      }
+
+      .h100 {
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- html 코드작성 -->
+      <header id="header" class="bg-dark">
+        <div class="container d-flex h100 align-items-center">
+          <div class="row">
+            <div class="col">
+              <h1 class="text-danger text-uppercase font-italic">
+                <strong>my first bootstrap</strong><br>
+               <small class="text-light">website</small>
+              </h1>
+              <p class="text-muted lead py-2 w-75">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quisquam qui sequi, ullam officia mollitia labore optio nemo cumque odit, corrupti libero, reprehenderit tempore amet? Veritatis iusto blanditiis accusantium provident.</p>
+              <a href="" class="btn btn-outline-primary btn-lg m-2 text-capitalize">press here</a>
+              <a href="" class="btn btn-outline-success btn-lg m-2  text-capitalize">press here</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <br><br>
+    </div>
+    <section class="py-5 bg-light" id="skills">
+      <div class="container">
+        <!-- 타이틀 -->
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="display-4 text-uppercase text-dark mb-0">
+              <strong>skills</strong>
+            </h1>
+            <div class="title-underline bg-danger"></div>
+            <p class="mt-2 text-capitalize text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <!-- 타이틀 끝 -->
+        <div class="row">
+          <!-- single col -->
+          <div class="col text-center my-4">
+            <i class="fab fa-node-js fa-5x text-danger"></i>
+            <h3 class="text-uppercase my-3">node.js</h3>
+            <p class="text-muted lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iure eum mollitia pariatur commodi fugiat voluptate fuga excepturi officiis consequuntur nisi perspiciatis, doloremque magnam suscipit temporibus soluta dolor doloribus accusantium?</p>
+            <a href="#" class="btn btn-outline-danger w-100 text-uppercase">press here</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+    <section class="py-5 bg-light" id="skills">
+      <div class="container d-flex h100 align-items-center">
+        <!-- 타이틀 -->
+        <div class="skills-group">
+          <div class="row">
+            <div class="col text-center">
+              <h1 class="display-4 text-uppercase text-dark mb-0">
+               <strong>skills</strong>
+              </h1>
+              <div class="title-underline bg-danger"></div>
+              <p class="mt-2 text-capitalize text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <!-- 타이틀 끝 -->
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 text-center my-4">
+              <i class="fab fa-node-js fa-5x text-danger"></i>
+              <h3 class="text-uppercase my-3">node.js</h3>
+              <p class="text-muted lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iure eum mollitia pariatur commodi fugiat voluptate fuga excepturi officiis consequuntur nisi perspiciatis, doloremque magnam suscipit temporibus soluta dolor doloribus accusantium?</p>
+            <a href="#" class="btn btn-outline-danger w-100 text-uppercase">press here</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center my-4">
+              <i class="fab fa-html5 fa-5x text-danger"></i>
+              <h3 class="text-uppercase my-3">html</h3>
+              <p class="text-muted lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iure eum mollitia pariatur commodi fugiat voluptate fuga excepturi officiis consequuntur nisi perspiciatis, doloremque magnam suscipit temporibus soluta dolor doloribus accusantium?</p>
+              <a href="#" class="btn btn-outline-danger w-75 text-uppercase">press here</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center my-4">
+              <i class="fab fa-css3 fa-5x text-danger"></i>
+              <h3 class="text-uppercase my-3">css</h3>
+              <p class="text-muted lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iure eum mollitia pariatur commodi fugiat voluptate fuga excepturi officiis consequuntur nisi perspiciatis, doloremque magnam suscipit temporibus soluta dolor doloribus accusantium?</p>
+              <a href="#" class="btn btn-outline-danger w-50 text-uppercase">press here</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center my-4">
+              <i class="fab fa-js fa-5x text-danger"></i>
+              <h3 class="text-uppercase my-3">js</h3>
+              <p class="text-muted lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iure eum mollitia pariatur commodi fugiat voluptate fuga excepturi officiis consequuntur nisi perspiciatis, doloremque magnam suscipit temporibus soluta dolor doloribus accusantium?</p>
+              <a href="#" class="btn btn-outline-danger w-25 text-uppercase">press<br>here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- jQuery , bundle.js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      // 자바스크립트 코드 작성
+    </script>
+  </body>
+</html>

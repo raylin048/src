@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Emilys+Candy|Single+Day&display=swap" rel="stylesheet">
+    <style>
+      /* style 코드 작성 */
+      body {
+        font-family: 'Single Day', cursive;
+        font-family: 'Emilys Candy', cursive;
+        font-weight: 400;
+      }
+
+      h1,h2,h3,h4,h5,span {
+        font-family: 'Emilys Candy', cursive;
+        font-weight: 400;
+      }
+
+      P{
+        font-family: "Single Day", cursive;
+        font-weight: 400;
+      }
+
+
+      .h80 {
+        min-height: 80vh;
+      }
+
+      .h100 {
+        min-height: 100vh;
+      }
+
+      .title-underline{
+        width: 200px;
+        height: 7px;
+        margin: auto;
+      }
+
+      /* .card img {
+        max-width: 350px;
+        max-height: 475px;
+      } */
+
+      #carousel{
+        height: 100vh;
+      }
+
+      .carousel-inner .carousel-item img{
+        min-width: 80%;
+        min-height: 50vh;
+        max-width: 100%;
+        max-height: 70vh;
+      }
+
+      #filler {
+        background: 
+      linear-gradient(to right,rgba(0,0,0,0.1), rgba(0,0,0,1)), url(img/IU_Blueming.jpg) center center no-repeat;
+        background-size: cover;
+      /* linear-gradient(to right,rgba(0,0,0,0.1), rgba(0,0,0,1)) */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Team 섹션 시작 -->
+    <section id="team" class="py-5 bg-light d-flex align-items-center">
+      <div class="container">
+        <!-- 타이틀 -->
+        <div class="row">
+          <div class="col text-center justify-content-around">
+            <h1 class="display-4 text-uppercase text-dark mb-0">
+              <strong>team</strong>
+            </h1>
+            <div class="title-underline bg-danger"></div>
+            <p class="mt-2 text-capitalize text-muted">팀 멤버들을 소개합니다.
+            </p>
+          </div>
+        </div>
+        <!-- 타이틀 끝 -->
+        <div class="row justify-content-around">
+          <!-- member 시작 -->
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="card">
+              <img src="img/men1.jpeg" alt="member" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-capitalize">team member</h5>
+                <p class="card-text" style="font-family: 'Emilys Candy', cursive;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn btn-outline-warning text-uppercase">press here</a>
+              </div>
+              <div class="card-footer bg-secondary d-flex justify-content-around">
+                <a href=""><i class="fab fa-facebook fa-2x text-dark"></i></a>
+                <a href=""><i class="fab fa-twitter fa-2x text-dark"></i></a>
+                <a href=""><i class="fab fa-youtube fa-2x text-dark"></i></a>
+                <a href=""><i class="fab fa-google fa-2x text-dark"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 my-3">
+              <div class="card">
+                <img src="img/women1.jpeg" alt="member" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">team member</h5>
+                  <p class="card-text" style="font-family: 'Emilys Candy', cursive;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-outline-warning text-uppercase">press here</a>
+                </div>
+                <div class="card-footer bg-secondary d-flex justify-content-around">
+                  <a href=""><i class="fab fa-facebook fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-twitter fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-youtube fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-google fa-2x text-dark"></i></a>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 my-3">
+              <div class="card">
+                <img src="img/women2.jpeg" alt="member" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">team member</h5>
+                  <p class="card-text" style="font-family: 'Emilys Candy', cursive;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-outline-warning text-uppercase">press here</a>
+                </div>
+                <div class="card-footer bg-secondary d-flex justify-content-around">
+                  <a href=""><i class="fab fa-facebook fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-twitter fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-youtube fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-google fa-2x text-dark"></i></a>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 my-3">
+              <div class="card">
+                <img src="img/women3.jpeg" alt="member" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">team member</h5>
+                  <p class="card-text" style="font-family: 'Emilys Candy', cursive;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-outline-warning text-uppercase">press here</a>
+                </div>
+                <div class="card-footer bg-secondary d-flex justify-content-around">
+                  <a href=""><i class="fab fa-facebook fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-twitter fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-youtube fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-google fa-2x text-dark"></i></a>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 my-3">
+              <div class="card">
+                <img src="img/men2.jpeg" alt="member" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">team member</h5>
+                  <p class="card-text" style="font-family: 'Emilys Candy', cursive;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-outline-warning text-uppercase">press here</a>
+                </div>
+                <div class="card-footer bg-secondary d-flex justify-content-around">
+                  <a href=""><i class="fab fa-facebook fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-twitter fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-youtube fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-google fa-2x text-dark"></i></a>
+                </div>
+              </div>
+          </div>
+          <!-- member 끝 -->
+        </div>
+      </div>
+    </section><br>
+    
+    <!-- 캐로솔 섹션 시작 -->
+    <section id="carousel" class="py-5 bg-primary">
+      <div class="container">
+        <!-- 타이틀 -->
+        <div class="row">
+          <div class="col text-center justify-content-around">
+            <h1 class="display-4 text-uppercase text-dark mb-0">
+              <strong>carousel</strong>
+            </h1>
+            <div class="title-underline bg-danger"></div>
+            <p class="mt-2 text-capitalize text-muted">제가 만든 
+              <span>carousel</span>을 소개합니다.
+            </p>
+          </div>
+        </div>
+        <!-- 타이틀 끝 -->
+        <div class="row">
+          <!-- member 시작 -->
+          <div class="col-md-10 mx-auto text-center">
+            <div id="example" class="carousel slide" data-ride="carousel">
+              <!-- 인디케이터 시작 -->
+              <ul class="carousel-indicators">
+                <li class="active" data-target="#example" data-slide-to="0"></li>
+                <li data-target="#example" data-slide-to="1"></li>
+                <li data-target="#example" data-slide-to="2"></li>
+                <li data-target="#example" data-slide-to="3"></li>
+                <li data-target="#example" data-slide-to="4"></li>
+                <li data-target="#example" data-slide-to="5"></li>
+              </ul>
+              <!-- 인디케이터 끝 -->
+              <!-- 슬라이드 쇼 -->
+              <div class="carousel-inner d-flex">
+                <div class="carousel-item text-center active">
+                  <img src="img/IU_b.jpg" alt="IU_image1" class="d-block w-100" />
+                </div>
+                <div class="carousel-item text-center">
+                  <img src="img/IU1.jpg" alt="IU_image2" class="d-block w-100" />
+                </div>
+                <div class="carousel-item text-center">
+                  <img src="img/IU_lovepoem.jpg" alt="IU_image3" class="d-block w-100" />
+                </div>
+                <div class="carousel-item text-center">
+                  <img src="img/IUaFile.jpg" alt="IU_image4" class="d-block w-100" />
+                </div>
+                <div class="carousel-item text-center">
+                  <img src="img/IU_Blueming.jpg" alt="IU_image5" class="d-block w-100" />
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="img/IU_Darling.jpg" alt="IU_image6" class="d-block w-100" />
+                  </div>
+              </div>
+              <!-- 슬라이드 쇼 끝 -->
+              <!-- 화살표 버튼 시작 -->
+              <a href="#example" class="carousel-control-prev" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">이전</span>
+              </a>
+              <a href="#example" class="carousel-control-next" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">다음</span>
+              </a>
+              <!-- 화살표 버튼 끝 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><br>
+
+    <!-- 필러 섹션 시작 -->
+    <section id="filler" class="p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-3 text-center">
+            <h1 class="text-danger">my first bootstrap website</h1>
+            <p class="lead text-white" style="font-family: 'Emilys Candy', cursive;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint doloremque tenetur, perferendis non iure dolorum ullam. Quod quia natus perferendis quidem, tempora at neque accusamus molestias consequuntur ut magnam minima.
+            </p>
+            <a href="#" class="btn btn-primary btn-lg m-2 text-capitalize">press here</a>
+          </div>
+        </div>
+      </div>
+    </section><br>
+
+    <!-- jQuery , bundle.js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      // 자바스크립트 코드 작성
+    </script>
+  </body>
+</html>
